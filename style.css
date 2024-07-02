@@ -1,7 +1,7 @@
 .nav-logo {
   width: 40px;
   height: 40px;
-  border: 1px solid #bb576c;
+  /* border: 2px solid #222; */
   border-radius: 12px;
   overflow: hidden;
 }
