@@ -1,3 +1,20 @@
+.contact-links {
+  margin-top: 16px;
+  color: #0073e6;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link img {
+  margin-right: 8px;
+}
+
 /* Ensuring the stack-wrapper takes full width within the grid */
 .stack-wrapper {
   display: flex;
@@ -2731,7 +2748,7 @@ a {
   grid-template-rows: auto;
   /* grid-template-columns: 1fr 1fr; */
   grid-auto-columns: 1fr;
-  padding: 32px 24px 40px;
+  padding: 32px 20px 40px;
   display: grid;
 }
 
@@ -2800,7 +2817,7 @@ a {
 .contact-image {
   width: 80px;
   height: 80px;
-  background-image: url("https://assets-global.website-files.com/65c4b78e2f4b9d4b1696ade5/65c4bc63c7d423b26e1b9aba_scott-avatar.webp");
+  background-image: url("Images/myself.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
