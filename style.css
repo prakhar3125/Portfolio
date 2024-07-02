@@ -51,16 +51,12 @@
 }
 
 .project-info {
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .project-details {
   list-style-type: disc;
   padding-left: 20px;
-}
-
-.project-details li {
-  margin-bottom: 4px;
 }
 
 /* Stacking the wrappers on top of each other */
