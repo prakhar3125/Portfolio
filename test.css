@@ -1,63 +1,3 @@
-/* Ensuring the stack-wrapper takes full width within the grid */
-.stack-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px; /* Adjust the gap between the stacked items as needed */
-  width: 100%;
-}
-
-/* Ensuring the individual wrapper takes full width */
-.project-item {
-  width: 100%;
-  padding: 16px;
-  /* border: 1px solid #ffffff; */
-  border-radius: 8px;
-  /* background-color: #ffffff; */
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.github-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #0073e6;
-}
-
-.github-link img {
-  margin-right: 4px;
-}
-
-.project-info {
-  margin-top: 8px;
-}
-
-.project-details {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.project-details li {
-  margin-bottom: 4px;
-}
-
-/* Stacking the wrappers on top of each other */
-.stack-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px; /* Adjust the gap between the stacked items as needed */
-}
-
-/* Ensuring the individual wrapper takes full width */
-.wrapper.with-button {
-  width: 100%;
-}
-
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -351,6 +291,11 @@ html.w-mod-touch * {
   display: block;
 }
 
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
 .w-clearfix:before,
 .w-clearfix:after {
   content: " ";
@@ -392,6 +337,94 @@ html[data-w-dynpage] [data-w-cloak] {
 
 pre.w-code-block code {
   all: inherit;
+}
+
+.w-webflow-badge,
+.w-webflow-badge * {
+  z-index: auto;
+  visibility: visible;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  float: none;
+  clear: none;
+  box-shadow: none;
+  opacity: 1;
+  direction: ltr;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  text-align: inherit;
+  letter-spacing: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-indent: 0;
+  text-transform: inherit;
+  text-shadow: none;
+  font-smoothing: auto;
+  vertical-align: baseline;
+  cursor: inherit;
+  white-space: inherit;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  background: none;
+  border: 0 rgba(0, 0, 0, 0);
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  transition: none;
+  display: block;
+  position: static;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  overflow: visible;
+  transform: none;
+}
+
+.w-webflow-badge {
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  visibility: visible !important;
+  z-index: 2147483647 !important;
+  color: #aaadb0 !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: #fff !important;
+  border-radius: 3px !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  position: fixed !important;
+  top: auto !important;
+  bottom: 12px !important;
+  left: auto !important;
+  right: 12px !important;
+  overflow: visible !important;
+  transform: none !important;
+}
+
+.w-webflow-badge > img {
+  visibility: visible !important;
+  opacity: 1 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
 }
 
 h1,
@@ -2305,6 +2338,25 @@ a {
   box-shadow: 0 6px 12px rgba(29, 29, 38, 0.04);
 }
 
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #bb576c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.nav-logo-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.nav-menu-wrapper {
+  align-items: center;
+  display: flex;
+}
+
 .nav-menu-item {
   color: var(--grey-60);
   border-radius: 12px;
@@ -2464,13 +2516,13 @@ a {
 }
 
 .section.profile {
-  /* grid-column-gap: 12px;
+  grid-column-gap: 12px;
   grid-row-gap: 12px;
   grid-template-rows: auto;
-  grid-template-columns: 3fr 5fr; */
-  /* grid-auto-columns: 1fr; */
+  grid-template-columns: 3fr 5fr;
+  grid-auto-columns: 1fr;
   padding-top: 88px;
-  /* display: grid; */
+  display: grid;
 }
 
 .section.padding-and-margin {
@@ -2485,12 +2537,12 @@ a {
   overflow: hidden;
 }
 
-/* .block.main-image {
+.block.main-image {
   background-image: url("https://assets-global.website-files.com/65c4b78e2f4b9d4b1696ade5/65c4e4fc734c5d84ab7ea65f_Scott-big.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 .block.block-paddings.profile {
   grid-column-gap: 48px;
@@ -2721,15 +2773,6 @@ a {
   grid-row-gap: 40px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  padding: 32px 24px 40px;
-  display: grid;
-}
-.block-grid-contentent {
-  grid-column-gap: 24px;
-  grid-row-gap: 40px;
-  grid-template-rows: auto;
-  /* grid-template-columns: 1fr 1fr; */
   grid-auto-columns: 1fr;
   padding: 32px 24px 40px;
   display: grid;
