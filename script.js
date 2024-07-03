@@ -1,3 +1,35 @@
+const logoEl = document.querySelector(".theme-toggle");
+const bodyEl = document.body;
+
+logoEl.addEventListener("click", () => {
+  bodyEl.classList.toggle("theme-dark");
+  if (bodyEl.classList.contains("theme-dark")) {
+    // Initialize grained effect
+    var options = {
+      animate: true,
+      patternWidth: 100,
+      patternHeight: 100,
+      grainOpacity: 0.05,
+      grainDensity: 1,
+      grainWidth: 1,
+      grainHeight: 1,
+    };
+    grained("#grain", options);
+
+    // Disable body scrolling when theme is active
+    bodyEl.style.overflow = "hidden";
+  } else {
+    // Remove grained effect
+    const grainEl = document.getElementById("grain");
+    if (grainEl) {
+      grainEl.remove();
+    }
+
+    // Enable body scrolling when theme is inactive
+    bodyEl.style.overflow = "auto";
+  }
+});
+
 /*!
  * Webflow: Front-end site library
  * @license MIT

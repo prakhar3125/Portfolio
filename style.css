@@ -1,3 +1,113 @@
+body {
+  transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out; /* Add transitions for background and text color */
+}
+
+.theme-dark {
+  background-color: #ffb899; /* Fallback background color */
+  background-image: radial-gradient(
+      at 37% 28%,
+      hsla(206, 60%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 12% 7%, hsla(222, 74%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 80%, hsla(26, 61%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 3%, hsla(241, 83%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 70% 63%, hsla(91, 61%, 65%, 1) 0px, transparent 50%);
+  /* ... other styles ... */
+}
+
+.medium-mmm {
+  text-align: center;
+}
+.bold-text {
+  font-weight: bold;
+}
+
+body.theme-dark .medium-l.center-text.max-width-424 {
+  color: #000; /* Change text color to black */
+}
+
+body.theme-dark {
+  background-color: #ffb899; /* Fallback background color */
+  background-image: radial-gradient(
+      at 37% 28%,
+      hsla(206, 60%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 12% 7%, hsla(222, 74%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 80%, hsla(26, 61%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 3%, hsla(241, 83%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 70% 63%, hsla(91, 61%, 65%, 1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keep background static on scroll */
+  overflow: hidden; /* Prevent scrolling of background */
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+body.theme-dark::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  animation: grain-animation 0.6s infinite;
+}
+
+@keyframes grain-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 10%);
+  }
+  60% {
+    transform: translate(15%, 5%);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(5%, 15%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.medium-mmm.link {
+  color: var(--grey-60);
+  transition: color 0.2s ease-in-out;
+}
+
+.medium-mmm.link:hover,
+.medium-mmm.link:focus {
+  color: var(--black);
+}
+
+body.theme-dark .medium-mmm {
+  color: #000; /* Change text color to black */
+}
+
 .nav-logo {
   width: 40px;
   height: 40px;
