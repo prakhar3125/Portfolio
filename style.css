@@ -73,6 +73,7 @@ body.theme-dark {
   background-attachment: fixed; /* Keep background static on scroll */
   overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
