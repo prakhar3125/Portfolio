@@ -76,7 +76,7 @@ body.theme-dark {
 }
 @media (max-width: 768px) {
   body.theme-dark {
-    background-attachment: fixed; /* Ensure background is fixed on mobile */
+    background-attachment: initial; /* Ensure background is fixed on mobile */
     height: 100vh; /* Ensure the background covers the entire viewport height */
   }
 }
