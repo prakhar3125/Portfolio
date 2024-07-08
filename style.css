@@ -74,7 +74,12 @@ body.theme-dark {
   overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
-
+@media screen and (max-width: 768px) {
+  body.theme-dark {
+    background-attachment: fixed;
+    background-size: 100% 100%; /* Adjust background size for mobile */
+  }
+}
 @keyframes grain-animation {
   0% {
     transform: translate(0, 0);
