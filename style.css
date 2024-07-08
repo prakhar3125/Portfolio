@@ -74,16 +74,8 @@ body.theme-dark {
   background-attachment: fixed; /* Keep background static on scroll */
   overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
-  animation: breathing-gradient 5s infinite alternate;
 }
-@keyframes breathing-gradient {
-  0% {
-    background-color: #478ccf;
-  }
-  100% {
-    background-color: #77e4c8;
-  }
-}
+
 @media screen and (max-width: 768px) {
   body.theme-dark {
     background-attachment: fixed;
