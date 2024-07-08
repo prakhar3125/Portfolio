@@ -71,24 +71,16 @@ body.theme-dark {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Keep background static on scroll */
-
+  overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
-  height: 100vh;
-  margin: 0;
 }
-/* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Keep background static on scroll 
-  overflow: hidden; 
-  overflow-y: scroll; */
-
 @media (max-width: 768px) {
   body.theme-dark {
-    background-color: #77e4c8; /* Fallback background color (light blue) */
-    overflow: auto; /* Enable scrolling on mobile */
+    background-attachment: fixed; /* Ensure background is fixed on mobile */
+    height: 100vh; /* Ensure the background covers the entire viewport height */
   }
 }
+
 body.theme-dark::before {
   content: "";
   position: fixed;
