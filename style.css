@@ -40,16 +40,12 @@ body {
 }
 
 .theme-dark {
-  background-color: #ffb899; /* Fallback background color */
-  background-image: radial-gradient(
-      at 37% 28%,
-      hsla(206, 60%, 67%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 12% 7%, hsla(222, 74%, 75%, 1) 0px, transparent 50%),
-    radial-gradient(at 64% 80%, hsla(26, 61%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 99% 3%, hsla(241, 83%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 70% 63%, hsla(91, 61%, 65%, 1) 0px, transparent 50%);
+  background-color: #77e4c8; /* Fallback background color (light blue) */
+  background-image: radial-gradient(at 37% 28%, #77e4c8 0px, transparent 50%),
+    radial-gradient(at 12% 7%, #36c2ce 0px, transparent 50%),
+    radial-gradient(at 64% 80%, #478ccf 0px, transparent 50%),
+    radial-gradient(at 99% 3%, #4535c1 0px, transparent 50%),
+    radial-gradient(at 70% 63%, #36c2ce 0px, transparent 50%); /* Repeat the second color for a more 
   /* ... other styles ... */
 }
 
@@ -65,16 +61,12 @@ body.theme-dark .medium-l.center-text.max-width-424 {
 }
 
 body.theme-dark {
-  background-color: #ffb899; /* Fallback background color */
-  background-image: radial-gradient(
-      at 37% 28%,
-      hsla(206, 60%, 67%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 12% 7%, hsla(222, 74%, 75%, 1) 0px, transparent 50%),
-    radial-gradient(at 64% 80%, hsla(26, 61%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 99% 3%, hsla(241, 83%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 70% 63%, hsla(91, 61%, 65%, 1) 0px, transparent 50%);
+  background-color: #77e4c8; /* Fallback background color (light blue) */
+  background-image: radial-gradient(at 37% 28%, #77e4c8 0px, transparent 50%),
+    radial-gradient(at 12% 7%, #36c2ce 0px, transparent 50%),
+    radial-gradient(at 64% 80%, #478ccf 0px, transparent 50%),
+    radial-gradient(at 99% 3%, #4535c1 0px, transparent 50%),
+    radial-gradient(at 70% 63%, #36c2ce 0px, transparent 50%); /* Repeat the second color for a more balanced look */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2795,6 +2787,9 @@ a {
 }
 
 .margin-bottom-12 {
+  margin-bottom: 12px;
+}
+.margin-bottom-4 {
   margin-bottom: 12px;
 }
 
