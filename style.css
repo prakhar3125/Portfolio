@@ -74,10 +74,20 @@ body.theme-dark {
   overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
+/* Mobile Styles (media query) */
 @media only screen and (max-width: 768px) {
   body.theme-dark {
-    background-attachment: unset; /* Unfix background on mobile */
-    overflow: auto; /* Allow scrolling */
+    background-image: radial-gradient(at 37% 28%, #77e4c8 0px, transparent 50%),
+                       radial-gradient(at 12% 7%, #36c2ce 0px, transparent 50%),
+                       radial-gradient(at 12% 7%, #36c2ce 0px, transparent 50%),
+    radial-gradient(at 64% 80%, #478ccf 0px, transparent 50%),
+    radial-gradient(at 99% 3%, #4535c1 0px, transparent 50%),
+    radial-gradient(at 70% 63%, #36c2ce 0px, transparent 50%)
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: unset; /* Remove fixed on mobile */
+    overflow: auto; /* Allows natural scrolling on mobile */
   }
 }
 
