@@ -45,7 +45,8 @@ body {
     radial-gradient(at 12% 7%, #36c2ce 0px, transparent 50%),
     radial-gradient(at 64% 80%, #478ccf 0px, transparent 50%),
     radial-gradient(at 99% 3%, #4535c1 0px, transparent 50%),
-    radial-gradient(at 70% 63%, #36c2ce 0px, transparent 50%); /* Repeat the second color for a more 
+    radial-gradient(at 70% 63%, #36c2ce 0px, transparent 50%);
+  /* Repeat the second color for a more 
   /* ... other styles ... */
 }
 
@@ -73,6 +74,15 @@ body.theme-dark {
   background-attachment: fixed; /* Keep background static on scroll */
   overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
+  animation: breathing-gradient 5s infinite alternate;
+}
+@keyframes breathing-gradient {
+  0% {
+    background-color: #478ccf;
+  }
+  100% {
+    background-color: #77e4c8;
+  }
 }
 @media screen and (max-width: 768px) {
   body.theme-dark {
@@ -80,6 +90,7 @@ body.theme-dark {
     background-size: 100% 100%; /* Adjust background size for mobile */
   }
 }
+
 @keyframes grain-animation {
   0% {
     transform: translate(0, 0);
