@@ -71,8 +71,14 @@ body.theme-dark {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Keep background static on scroll */
-  overflow: auto; /* Prevent scrolling of background */
+  overflow: hidden; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
+}
+@media only screen and (max-width: 768px) {
+  body.theme-dark {
+    background-attachment: unset; /* Unfix background on mobile */
+    overflow: auto; /* Allow scrolling */
+  }
 }
 
 body.theme-dark::before {
