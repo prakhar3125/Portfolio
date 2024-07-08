@@ -71,7 +71,7 @@ body.theme-dark {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Keep background static on scroll */
-  overflow: hidden; /* Prevent scrolling of background */
+  overflow: auto; /* Prevent scrolling of background */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
 
