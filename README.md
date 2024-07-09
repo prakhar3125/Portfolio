@@ -8,6 +8,8 @@ Site Demo: https://prakhar3125.netlify.app/
 -This code implements theme switching with smooth transitions and custom scrollbar styling. CSS variables centralize color control, making customization easy for light and dark themes. Smooth animations during theme changes are achieved with transition properties. Scrollbar styling is tailored for different themes using classes and variables. This approach enhances user experience with a cohesive interface and improved scrollbar interaction.
 ![Minimalist Website Launch Computer Mockup Instagram Post](https://github.com/prakhar3125/Portfolio/assets/111203228/02f4de19-e5bf-4d22-8d71-96d0263eb786)
 
+![Modern Neutral Web Design Digital Product Promotion Instagram Post (1)](https://github.com/prakhar3125/Portfolio/assets/111203228/e56e26ee-4724-4cbe-b19b-3c0ac50ab0d3)
+
 
 
 
