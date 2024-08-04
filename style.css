@@ -266,7 +266,7 @@ body.theme-dark .medium-mmm {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 .github-link {
