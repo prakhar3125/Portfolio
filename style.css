@@ -3570,7 +3570,7 @@ a {
 }
 
 .project-features li::before {
-  content: "▶";
+  content: "•";
   position: absolute;
   left: 0;
   color: #1a1a1a;
