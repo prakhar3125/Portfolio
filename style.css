@@ -3468,19 +3468,45 @@ a {
   white-space: nowrap;
 }
 
+/* Replace the conflicting mobile CSS with this */
 @media (max-width: 768px) {
   .project-links {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row !important;  /* Force horizontal layout */
+    justify-content: flex-start;
+    align-items: center;
     gap: 8px;
+    width: 100%;
+    flex-wrap: nowrap;
   }
   
   .project-links .button {
-    margin-right: 0;
-    width: 100%;
+    flex: 1;
+    max-width: 120px;  /* Prevent buttons from getting too wide */
     justify-content: center;
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .project-links {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  
+  .project-links .button {
+    flex: 1;
+    max-width: 100px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
